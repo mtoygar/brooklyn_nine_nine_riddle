@@ -1,0 +1,5 @@
+AllCops:
+  NewCops: enable
+
+Metrics/AbcSize:
+  Max: 20 # default is 17

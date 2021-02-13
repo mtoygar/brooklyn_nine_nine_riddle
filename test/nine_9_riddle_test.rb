@@ -7,11 +7,11 @@ require 'nine_9_riddle'
 class Nine9RiddleTest < ActiveSupport::TestCase
   (0..11).each do |index|
     test "#{index}th person is heavier" do
-      assert_equal index, Nine9Riddle.new(create_weight_array(index, 0.1)).calculate
+      assert_equal index, Nine9Riddle.new(create_weight_array(index, 0.1)).solve
     end
 
     test "#{index}th person is lighter" do
-      assert_equal index, Nine9Riddle.new(create_weight_array(index, -0.1)).calculate
+      assert_equal index, Nine9Riddle.new(create_weight_array(index, -0.1)).solve
     end
   end
 
